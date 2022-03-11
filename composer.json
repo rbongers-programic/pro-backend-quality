@@ -1,0 +1,45 @@
+{
+  "name": "programic/pro-backend-quality",
+  "description": "Programic Quality Control package",
+  "keywords": [
+    "quality",
+    "codestyle",
+    "phpmd",
+    "ecs",
+    "phpstan",
+    "phpmnd",
+    "phpcpd"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Programic",
+      "email": "info@programic.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "ext-json": "*",
+    "nunomaduro/larastan": "^0.7.15",
+    "phpmd/phpmd": "^2.10",
+    "povils/phpmnd": "^2.4",
+    "sebastian/phpcpd": "^6.0",
+    "slevomat/coding-standard": "^7.0",
+    "symplify/coding-standard": "^9.3",
+    "symplify/easy-coding-standard": "^9.4"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "7.4"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0-dev-master"
+    }
+  }
+}
