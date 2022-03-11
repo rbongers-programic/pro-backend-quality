@@ -29,8 +29,31 @@
     "symplify/coding-standard": "^9.3",
     "symplify/easy-coding-standard": "^9.4"
   },
+  "require-dev": {
+    "orchestra/testbench": "^7.1"
+  },
   "config": {
     "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Programic\\ProQuality\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Programic\\ProQuality\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Programic\\ProQuality\\ProQualityServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
