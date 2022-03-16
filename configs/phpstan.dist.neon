@@ -1,8 +1,11 @@
 parameters:
   level: 8
   reportUnmatchedIgnoredErrors: false
+  checkMissingIterableValueType: false
   excludes_analyse:
     - %currentWorkingDirectory%/boostrap/cache/*
     - %currentWorkingDirectory%/vendor/*
     - %currentWorkingDirectory%/storage/*
-  ignoreErrors: []
+    - %currentWorkingDirectory%/ecs.php
+  ignoreErrors:
+      - '#Property (.*)+ |Illuminate\Support\Collection<mixed, mixed>#'

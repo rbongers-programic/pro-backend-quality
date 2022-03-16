@@ -1,5 +1,5 @@
 includes:
-    - vendor/programic/quality-control/configs/phpstan.dist.neon
+    - vendor/programic/pro-backend-quality/configs/phpstan.dist.neon
 
 parameters:
   ignoreErrors: []

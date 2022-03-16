@@ -67,4 +67,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\UselessConstantTypeHintSniff::class);
     // - variables
     $services->set(\SlevomatCodingStandard\Sniffs\Variables\DisallowSuperGlobalVariableSniff::class);
+
+    $services->remove(\PHP_CodeSniffer\Standards\Generic\Sniffs\PHP\RequireStrictTypesSniff::class);
+    $services->remove(\SlevomatCodingStandard\Sniffs\Functions\StaticClosureSniff::class);
 };

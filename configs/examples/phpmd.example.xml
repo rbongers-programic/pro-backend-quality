@@ -8,5 +8,5 @@
         Project specific checks
     </description>
 
-    <rule ref="vendor/programic/quality-control/configs/phpmd.dist.xml"/>
+    <rule ref="vendor/programic/pro-backend-quality/configs/phpmd.dist.xml"/>
 </ruleset>

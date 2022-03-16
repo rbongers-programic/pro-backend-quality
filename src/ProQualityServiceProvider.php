@@ -13,7 +13,9 @@ class ProQualityServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        $this->commands([
+            Commands\ProQualityInstallCommand::class,
+        ]);
     }
 
 
