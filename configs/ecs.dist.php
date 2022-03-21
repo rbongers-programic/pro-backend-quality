@@ -18,7 +18,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\PhpCsFixer\Fixer\Basic\BracesFixer::class);
     $services->set(\PhpCsFixer\Fixer\ClassNotation\OrderedClassElementsFixer::class);
     $services->set(\PhpCsFixer\Fixer\FunctionNotation\ReturnTypeDeclarationFixer::class);
-    $services->set(\PhpCsFixer\Fixer\Strict\DeclareStrictTypesFixer::class);
     $services->set(\PhpCsFixer\Fixer\Strict\StrictComparisonFixer::class);
     $services->set(\PhpCsFixer\Fixer\Strict\StrictParamFixer::class);
 
