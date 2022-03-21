@@ -68,6 +68,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     // - variables
     $services->set(\SlevomatCodingStandard\Sniffs\Variables\DisallowSuperGlobalVariableSniff::class);
 
+    // - Programic specific rules
+//    $services->set(\ProgramicCodingStandards\Sniffs\Functions\ForceAttributeCastingSniff::class);
+
     $services->remove(\PHP_CodeSniffer\Standards\Generic\Sniffs\PHP\RequireStrictTypesSniff::class);
     $services->remove(\SlevomatCodingStandard\Sniffs\Functions\StaticClosureSniff::class);
 };
