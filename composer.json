@@ -22,7 +22,7 @@
     "php": "^7.4|^8.0",
     "ext-json": "*",
     "nunomaduro/larastan": "^0.7.15",
-    "phpmd/phpmd": "^2.10",
+    "phpmd/phpmd": "^2.12",
     "povils/phpmnd": "^2.4",
     "sebastian/phpcpd": "^6.0",
     "slevomat/coding-standard": "^7.0",
