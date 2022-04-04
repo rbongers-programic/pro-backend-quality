@@ -1,11 +1,19 @@
+includes:
+    - %currentWorkingDirectory%/vendor/nunomaduro/larastan/extension.neon
+
 parameters:
-  level: 8
-  reportUnmatchedIgnoredErrors: false
-  checkMissingIterableValueType: false
-  excludes_analyse:
-    - %currentWorkingDirectory%/boostrap/cache/*
-    - %currentWorkingDirectory%/vendor/*
-    - %currentWorkingDirectory%/storage/*
-    - %currentWorkingDirectory%/ecs.php
-  ignoreErrors:
-      - '#Property (.*)+ |Illuminate\Support\Collection<mixed, mixed>#'
+    level: 8
+
+    reportUnmatchedIgnoredErrors: false
+    checkMissingIterableValueType: false
+
+    excludePaths:
+        - %currentWorkingDirectory%/boostrap/cache/*
+        - %currentWorkingDirectory%/vendor/*
+        - %currentWorkingDirectory%/storage/*
+        - %currentWorkingDirectory%/ecs.php
+        - %currentWorkingDirectory%/_ide_helper.php
+        - %currentWorkingDirectory%/_ide_helper_models.php
+
+    ignoreErrors:
+        - '#Property (.*)+ |Illuminate\Support\Collection<mixed, mixed>#'
