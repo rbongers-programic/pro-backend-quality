@@ -1,6 +1,6 @@
 <?php
 
-namespace Programic\ProQuality\Tests;
+namespace Programic\ProQuality\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
