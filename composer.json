@@ -22,8 +22,8 @@
     "php": "^8.0",
     "ext-json": "*",
     "nunomaduro/larastan": "^2.0 || ^1.0",
-    "phpmd/phpmd": "^2.12",
-    "povils/phpmnd": "^2.4",
+    "phpmd/phpmd": "2.12",
+    "povils/phpmnd": "^3.0",
     "sebastian/phpcpd": "^6.0",
     "slevomat/coding-standard": "^7.0",
     "symplify/coding-standard": "^9.3",
@@ -37,7 +37,10 @@
     "orchestra/testbench": "^7.1"
   },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   },
   "autoload": {
     "psr-4": {
