@@ -21,9 +21,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\PhpCsFixer\Fixer\Strict\StrictComparisonFixer::class);
     $services->set(\PhpCsFixer\Fixer\Strict\StrictParamFixer::class);
 
-    // symplify
-    $services->set(\Symplify\CodingStandard\CognitiveComplexity\Rules\FunctionLikeCognitiveComplexityRule::class);
-
     // slevomat
     // - arrays
     $services->set(\SlevomatCodingStandard\Sniffs\Arrays\DisallowImplicitArrayCreationSniff::class);
@@ -35,6 +32,7 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\SlevomatCodingStandard\Sniffs\Classes\DisallowMultiConstantDefinitionSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\Classes\DisallowMultiPropertyDefinitionSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\Classes\ModernClassNameReferenceSniff::class);
+    $services->set(\SlevomatCodingStandard\Sniffs\Classes\PropertyDeclarationSniff::class);
     // - control structures
     $services->set(\SlevomatCodingStandard\Sniffs\ControlStructures\AssignmentInConditionSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\ControlStructures\DisallowContinueWithoutIntegerOperandInSwitchSniff::class);
@@ -60,7 +58,6 @@ return static function (ContainerConfigurator $containerConfigurator): void {
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSpacingSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff::class);
-    $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSpacingSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSpacingSniff::class);
     $services->set(\SlevomatCodingStandard\Sniffs\TypeHints\UselessConstantTypeHintSniff::class);
