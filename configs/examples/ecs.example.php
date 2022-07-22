@@ -1,17 +1,18 @@
 <?php
 
 declare(strict_types=1);
+require_once __DIR__ . '/vendor/programic/pro-backend-quality/configs/ecs.dist.php';
 
-use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use PHP_CodeSniffer\Standards\PSR12\Sniffs\Files\FileHeaderSniff;
+use Symplify\EasyCodingStandard\Config\ECSConfig;
 use Symplify\EasyCodingStandard\ValueObject\Option;
 
-return static function (ContainerConfigurator $containerConfigurator): void {
-    $containerConfigurator->import(__DIR__ . '/vendor/programic/pro-backend-quality/configs/ecs.dist.php');
+use function Programic\QualityControl\EasyCodingStandard\ecsRules;
+use function Programic\QualityControl\EasyCodingStandard\ecsSets;
+use function Programic\QualityControl\EasyCodingStandard\ecsSkips;
 
-    $parameters = $containerConfigurator->parameters();
-    $parameters->set(Option::PATHS, [
-        __DIR__,
-    ]);
+return static function (ECSConfig $ecsConfig): void {
+    $ecsConfig->paths([__DIR__]);
 
     $skips = [
         __DIR__ . '/vendor',
@@ -44,5 +45,9 @@ return static function (ContainerConfigurator $containerConfigurator): void {
         __DIR__ . '/app/Http/Middleware/Authenticate.php',
     ];
 
-    $parameters->set(Option::SKIP, $skips);
+    $ecsConfig->skip([...$skips, ...ecsSkips()]);
+
+    $ecsConfig->sets(ecsSets());
+
+    $ecsConfig->rules(ecsRules());
 };
