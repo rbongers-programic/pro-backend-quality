@@ -14,6 +14,8 @@ use function Programic\QualityControl\EasyCodingStandard\ecsSkips;
 return static function (ECSConfig $ecsConfig): void {
     $ecsConfig->paths([__DIR__]);
 
+    $rules = [];
+
     $skips = [
         __DIR__ . '/vendor',
         __DIR__ . '/storage',
@@ -47,7 +49,7 @@ return static function (ECSConfig $ecsConfig): void {
 
     $ecsConfig->skip([...$skips, ...ecsSkips()]);
 
-    $ecsConfig->sets(ecsSets());
+    $ecsConfig->rules([...$rules, ...ecsRules()]);
 
     $ecsConfig->rules(ecsRules());
 };
