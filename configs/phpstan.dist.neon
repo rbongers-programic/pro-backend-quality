@@ -13,6 +13,7 @@ parameters:
         - %currentWorkingDirectory%/storage/*
         - %currentWorkingDirectory%/ecs.php
         - %currentWorkingDirectory%/_ide_helper.php
+        - %currentWorkingDirectory%/_ide_helper_actions.php
         - %currentWorkingDirectory%/_ide_helper_models.php
 
     ignoreErrors:
