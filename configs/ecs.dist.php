@@ -22,6 +22,7 @@ function ecsRules(): array
     $rules[] = \PhpCsFixer\Fixer\FunctionNotation\ReturnTypeDeclarationFixer::class;
     $rules[] = \PhpCsFixer\Fixer\Strict\StrictComparisonFixer::class;
     $rules[] = \PhpCsFixer\Fixer\Strict\StrictParamFixer::class;
+    $rules[] = \PhpCsFixer\Fixer\Whitespace\BlankLineBeforeStatementFixer::class;
 
     // slevomat
     // - arrays
@@ -71,7 +72,6 @@ function ecsRules(): array
     $rules[] = \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSniff::class;
     $rules[] = \SlevomatCodingStandard\Sniffs\TypeHints\ReturnTypeHintSpacingSniff::class;
     $rules[] = \SlevomatCodingStandard\Sniffs\TypeHints\UselessConstantTypeHintSniff::class;
-
 
     // - variables
     $rules[] = \SlevomatCodingStandard\Sniffs\Variables\DisallowSuperGlobalVariableSniff::class;
