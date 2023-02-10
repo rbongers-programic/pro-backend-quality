@@ -17,4 +17,5 @@ parameters:
         - %currentWorkingDirectory%/_ide_helper_models.php
 
     ignoreErrors:
-        - '#Property (.*)+ |Illuminate\Support\Collection<mixed, mixed>#'
+        - '#Property .* has no type specified.#'
+        - '#Illuminate\Support\Collection<mixed, mixed>#'
