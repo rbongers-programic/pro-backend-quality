@@ -12,7 +12,7 @@ This package requires PHP 8.1 and Laravel 10.0 or higher.
 
 ### require package
 ```
-composer require programic/pro-backend-quality
+composer require programic/pro-backend-quality --dev
 ```
 
 ### install configs
