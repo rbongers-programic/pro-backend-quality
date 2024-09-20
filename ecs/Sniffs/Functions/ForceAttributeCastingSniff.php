@@ -2,9 +2,9 @@
 
 namespace ProgramicCodingStandards\Sniffs\Functions;
 
-use ProgramicCodingStandards\CodeSniffer\Helper\PropertyHelper;
-use ProgramicCodingStandards\CodeSniffer\Helper\TokenHelper;
-use ProgramicCodingStandards\Sniffs\AbstractSniff;
+use quality\ecs\CodeSniffer\Helper\PropertyHelper;
+use quality\ecs\CodeSniffer\Helper\TokenHelper;
+use quality\ecs\Sniffs\AbstractSniff;
 use ProgramicCodingStandards\Sniffs\ClassRegistrationTrait;
 
 class ForceAttributeCastingSniff extends AbstractSniff

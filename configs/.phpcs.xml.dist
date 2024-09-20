@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<ruleset>
+    <autoload>autoload-bootstrap.php</autoload>
+
+    <description>Programic PHP CS rules for Laravel</description>
+
+    <!-- Ignore normal Laravel files and folders -->
+    <exclude-pattern>*/cache/*</exclude-pattern>
+    <exclude-pattern>*/*.js</exclude-pattern>
+    <exclude-pattern>*/*.css</exclude-pattern>
+    <exclude-pattern>*/*.xml</exclude-pattern>
+    <exclude-pattern>*/*.blade.php</exclude-pattern>
+    <exclude-pattern>*/autoload.php</exclude-pattern>
+    <exclude-pattern>*/storage/*</exclude-pattern>
+    <exclude-pattern>*/docs/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/migrations/*</exclude-pattern>
+    <exclude-pattern>*/_ide_helper.php</exclude-pattern>
+    <exclude-pattern>*/_ide_helper_models.php</exclude-pattern>
+    <exclude-pattern>*/.phpstorm.meta.php</exclude-pattern>
+
+    <rule ref="PSR12"/>
+
+    <rule ref="PSR1.Files.SideEffects">
+        <exclude-pattern>/public/index.php</exclude-pattern>
+        <exclude-pattern>/tests/*</exclude-pattern>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="140"/>
+        </properties>
+
+        <exclude-pattern>/database/*</exclude-pattern>
+        <exclude-pattern>/tasks/*</exclude-pattern>
+        <exclude-pattern>/tests/*</exclude-pattern>
+    </rule>
+
+    <config name="installed_paths" value="vendor/slevomat/coding-standard"/>
+
+    <!-- Arrays -->
+    <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
+    <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
+    <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+
+    <!-- Classes -->
+    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility"/>
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition"/>
+    <rule ref="SlevomatCodingStandard.Classes.DisallowMultiPropertyDefinition"/>
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+    <rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
+
+    <!-- Control Structures -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+
+    <!-- Exceptions -->
+    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+
+    <!-- Functions -->
+    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter">
+        <exclude-pattern>/app/Http/Resources/*</exclude-pattern>
+        <exclude-pattern>/app/Http/Controllers/*</exclude-pattern>
+        <exclude-pattern>/app/Providers/*</exclude-pattern>
+        <exclude-pattern>/app/Rules/*</exclude-pattern>
+        <exclude-pattern>/app/Models/*</exclude-pattern>
+        <exclude-pattern>/app/Casts/*</exclude-pattern>
+        <exclude-pattern>/app/Notifications/*</exclude-pattern>
+        <exclude-pattern>/app/Policies/*</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.StrictCall"/>
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+
+    <!-- Namespaces -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+
+    <!-- PHP -->
+    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
+    <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
+
+    <!-- TypeHints -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+        <exclude-pattern>/app/Http/Middleware/ThrottleRequests.php</exclude-pattern>
+        <exclude-pattern>/app/Http/Middleware/Authenticate.php</exclude-pattern>
+        <exclude-pattern>/app/Actions/Auth/RedirectIfTwoFactorAuthenticatableAction.php</exclude-pattern>
+        <exclude-pattern>/app/Http/Resources/*</exclude-pattern>
+        <exclude-pattern>/app/Providers/FortifyServiceProvider.php</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+        <exclude-pattern>/app/Models/*/*.php</exclude-pattern>
+    </rule>
+
+    <!-- Variables -->
+    <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
+
+    <!-- No compact() and no 'dumps' -->
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="compact" value="null"/>
+                <element key="dd" value="null"/>
+                <element key="dump" value="null"/>
+                <element key="var_dump" value="null"/>
+                <element key="ray" value="null"/>
+                <element key="only" value="null"/>
+            </property>
+        </properties>
+    </rule>
+
+    <!-- Class name should match the file name -->
+    <rule ref="Squiz.Classes.ClassFileName"/>
+</ruleset>

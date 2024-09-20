@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace ProgramicCodingStandards\Sniffs;
 
-use ProgramicCodingStandards\CodeSniffer\CodeError;
+use prouse quality\ecs\CodeSniffer\CodeError;
 use ProgramicCodingStandards\CodeSniffer\CodeWarning;
-use ProgramicCodingStandards\CodeSniffer\Helper\ExceptionHelper;
+use quality\ecs\CodeSniffer\Helper\ExceptionHelper;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 
@@ -68,7 +68,7 @@ abstract class AbstractSniff implements Sniff
     /**
      * Returns an exception handler for the sniffed file.
      *
-     * @return ExceptionHelper Returns the exception helper.
+     * @return quality\ecs\CodeSniffer\Helper\ExceptionHelper Returns the exception helper.
      */
     protected function getExceptionHandler(): ExceptionHelper
     {

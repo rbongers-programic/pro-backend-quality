@@ -6,6 +6,10 @@ parameters:
 
     reportUnmatchedIgnoredErrors: false
     checkMissingIterableValueType: false
+    noUnnecessaryCollectionCall: true
+    checkModelProperties: true
+    noEnvCallsOutsideOfConfig: true
+    checkUnusedViews: true
 
     excludePaths:
         - %currentWorkingDirectory%/boostrap/cache/*
