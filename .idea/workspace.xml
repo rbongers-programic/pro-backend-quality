@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eec58e3-b115-4f5a-b04c-042b4212b90c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/configs/.phpcs.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/phpstan.dist.neon" beforeDir="false" afterPath="$PROJECT_DIR$/configs/phpstan.dist.neon" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/CodeSniffer/Helper/DocHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/CodeSniffer/Helper/DocHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/CodeSniffer/Helper/ExceptionHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/CodeSniffer/Helper/ExceptionHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/Sniffs/AbstractSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/Sniffs/AbstractSniff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ecs/Sniffs/Functions/ForceAttributeCastingSniff.php" beforeDir="false" afterPath="$PROJECT_DIR$/ecs/Sniffs/Functions/ForceAttributeCastingSniff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProQualityServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProQualityServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +29,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="v4.x" />
-                    <option name="lastUsedInstant" value="1726820811" />
+                    <option name="lastUsedInstant" value="1726842986" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -204,7 +198,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "v4.x",
     "last_opened_file_path": "/Users/mike/Code/mr-green/api/src/pro-backend-quality",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -243,7 +237,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726820386790</updated>
       <workItem from="1726820388025" duration="5458000" />
-      <workItem from="1726832415601" duration="8723000" />
+      <workItem from="1726832415601" duration="8837000" />
     </task>
     <servers />
   </component>
