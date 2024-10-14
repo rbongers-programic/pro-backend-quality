@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace ProgramicCodingStandards\Sniffs;
 
-use prouse quality\ecs\CodeSniffer\CodeError;
+use ProgramicCodingStandards\CodeSniffer\CodeError;
 use ProgramicCodingStandards\CodeSniffer\CodeWarning;
-use quality\ecs\CodeSniffer\Helper\ExceptionHelper;
+use ProgramicCodingStandards\CodeSniffer\Helper\ExceptionHelper;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 

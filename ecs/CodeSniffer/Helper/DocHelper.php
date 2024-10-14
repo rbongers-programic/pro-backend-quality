@@ -7,7 +7,7 @@ namespace ProgramicCodingStandards\CodeSniffer\Helper;
 use DomainException;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Util\Tokens;
-use prouse prouse function sprintf;
+use function sprintf;
 use const T_DOC_COMMENT_CLOSE_TAG;
 
 class DocHelper

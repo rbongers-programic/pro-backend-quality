@@ -3,12 +3,11 @@
 declare(strict_types=1);
 require_once __DIR__ . '/vendor/programic/pro-backend-quality/configs/ecs.dist.php';
 
-use PHP_CodeSniffer\Standards\PSR12\Sniffs\Files\FileHeaderSniff;
+use SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSniff;
+use SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff;
 use Symplify\EasyCodingStandard\Config\ECSConfig;
-use Symplify\EasyCodingStandard\ValueObject\Option;
 
 use function Programic\QualityControl\EasyCodingStandard\ecsRules;
-use function Programic\QualityControl\EasyCodingStandard\ecsSets;
 use function Programic\QualityControl\EasyCodingStandard\ecsSkips;
 
 return static function (ECSConfig $ecsConfig): void {
@@ -30,7 +29,7 @@ return static function (ECSConfig $ecsConfig): void {
         $skips[] = __DIR__ . '/.phpstorm.meta.php';
     }
 
-    $skips[\SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff::class . '.MissingNativeTypeHint'] = [
+    $skips[PropertyTypeHintSniff::class . '.MissingNativeTypeHint'] = [
         __DIR__ . '/app/Exceptions/Handler.php',
         __DIR__ . '/app/Http/Kernel.php',
         __DIR__ . '/app/Http/Middleware/VerifyCsrfToken.php',
@@ -43,7 +42,7 @@ return static function (ECSConfig $ecsConfig): void {
         __DIR__ . '/app/Models/',
     ];
 
-    $skips[\SlevomatCodingStandard\Sniffs\TypeHints\ParameterTypeHintSniff::class] = [
+    $skips[ParameterTypeHintSniff::class] = [
         __DIR__ . '/app/Http/Middleware/Authenticate.php',
     ];
 
