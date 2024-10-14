@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace ProgramicCodingStandards\CodeSniffer\Helper;
 
-use quality\ecs\CodeSniffer\CodeError;
+use ProgramicCodingStandards\CodeSniffer\CodeError;
 use ProgramicCodingStandards\CodeSniffer\CodeWarning;
 use PHP_CodeSniffer\Files\File;
 

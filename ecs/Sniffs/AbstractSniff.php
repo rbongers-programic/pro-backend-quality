@@ -68,7 +68,7 @@ abstract class AbstractSniff implements Sniff
     /**
      * Returns an exception handler for the sniffed file.
      *
-     * @return quality\ecs\CodeSniffer\Helper\ExceptionHelper Returns the exception helper.
+     * @return ExceptionHelper Returns the exception helper.
      */
     protected function getExceptionHandler(): ExceptionHelper
     {
