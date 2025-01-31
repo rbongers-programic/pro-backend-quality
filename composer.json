@@ -22,7 +22,7 @@
     "ext-json": "*",
     "larastan/larastan": "^3.0",
     "phpmd/phpmd": "^2.12",
-    "slevomat/coding-standard": "dev-master",
+    "slevomat/coding-standard": "8.x-dev",
     "symplify/coding-standard": "^12.0",
     "symplify/easy-coding-standard": "^12.0",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2 || ^0.7",
