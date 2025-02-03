@@ -5,6 +5,8 @@ includes:
 parameters:
     level: 8
 
+    reportUnmatchedIgnoredErrors: false
+
     excludePaths:
         - %currentWorkingDirectory%/boostrap/cache/*
         - %currentWorkingDirectory%/vendor/*
