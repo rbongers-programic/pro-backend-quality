@@ -11,10 +11,11 @@ parameters:
         - %currentWorkingDirectory%/boostrap/cache/*
         - %currentWorkingDirectory%/vendor/*
         - %currentWorkingDirectory%/storage/*
-        - %currentWorkingDirectory%/ecs.php
-        - %currentWorkingDirectory%/_ide_helper.php
-        - %currentWorkingDirectory%/_ide_helper_actions.php
-        - %currentWorkingDirectory%/_ide_helper_models.php
+        - %currentWorkingDirectory%/ecs.php(?)
+        - %currentWorkingDirectory%/.phpstorm.meta.php(?)
+        - %currentWorkingDirectory%/_ide_helper.php(?)
+        - %currentWorkingDirectory%/_ide_helper_actions.php(?)
+        - %currentWorkingDirectory%/_ide_helper_models.php(?)
 
     ignoreErrors:
         - '#Property .* has no type specified.#'
