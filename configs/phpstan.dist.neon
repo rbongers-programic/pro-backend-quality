@@ -1,11 +1,9 @@
 includes:
     - %currentWorkingDirectory%/vendor/larastan/larastan/extension.neon
+    - %currentWorkingDirectory%/nesbot/carbon/extension.neon
 
 parameters:
-    level: 8
-
-    reportUnmatchedIgnoredErrors: false
-    checkMissingIterableValueType: false
+    level: 10
 
     excludePaths:
         - %currentWorkingDirectory%/boostrap/cache/*
